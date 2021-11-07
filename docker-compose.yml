@@ -2,32 +2,16 @@ version: "3.3"
 
 services:
   worker-01:
-    build:
-      context: ./alpine-ssh
-      dockerfile: Dockerfile
-      args:
-        PASSWORD: password
+    image: eugenes1/python-sshd
 
   worker-02:
-    build:
-      context: ./alpine-ssh
-      dockerfile: Dockerfile
-      args:
-        PASSWORD: password
+    image: eugenes1/python-sshd
   
   worker-03:
-    build:
-      context: ./alpine-ssh
-      dockerfile: Dockerfile
-      args:
-        PASSWORD: password
+    image: eugenes1/python-sshd
 
   worker-04:
-    build:
-      context: ./alpine-ssh
-      dockerfile: Dockerfile
-      args:
-        PASSWORD: password
+    image: eugenes1/python-sshd
 
   master-ansible:
     image: lexauw/ansible-alpine  

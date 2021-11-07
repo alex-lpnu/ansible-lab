@@ -1,3 +1,0 @@
-[submodule "alpine-ssh"]
-	path = alpine-ssh
-	url = https://github.com/arvindr226/alpine-ssh.git
