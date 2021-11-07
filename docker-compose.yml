@@ -2,16 +2,16 @@ version: "3.3"
 
 services:
   worker-01:
-    image: eugenes1/python-sshd
+    image: davidlor/python-ssh
 
   worker-02:
-    image: eugenes1/python-sshd
+    image: davidlor/python-ssh
   
   worker-03:
-    image: eugenes1/python-sshd
+    image: davidlor/python-ssh
 
   worker-04:
-    image: eugenes1/python-sshd
+    image: davidlor/python-ssh
 
   master-ansible:
     image: lexauw/ansible-alpine  
