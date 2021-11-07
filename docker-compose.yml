@@ -1,0 +1,31 @@
+version: "3.3"
+
+services:
+  worker-01:
+    build:
+      context: ./alpine-ssh
+      dockerfile: Dockerfile
+      args:
+        PASSWORD: password
+
+  worker-02:
+    build:
+      context: ./alpine-ssh
+      dockerfile: Dockerfile
+      args:
+        PASSWORD: password
+  
+  worker-03:
+    build:
+      context: ./alpine-ssh
+      dockerfile: Dockerfile
+      args:
+        PASSWORD: password
+
+  worker-04:
+    build:
+      context: ./alpine-ssh
+      dockerfile: Dockerfile
+      args:
+        PASSWORD: password
+  
