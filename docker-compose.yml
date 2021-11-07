@@ -28,4 +28,8 @@ services:
       dockerfile: Dockerfile
       args:
         PASSWORD: password
-  
+
+  master-ansible:
+    image: lexauw/ansible-alpine  
+    volumes:
+      - ./inventory.txt:/etc/ansible/hosts
