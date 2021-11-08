@@ -16,4 +16,5 @@ services:
   master-ansible:
     image: lexauw/ansible-alpine  
     volumes:
-      - ./inventory.txt:/etc/ansible/hosts
+      - ./inventory.txt:/etc/ansible/hosts:ro
+      - ./:/app:ro
