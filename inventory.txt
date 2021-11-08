@@ -1,14 +1,8 @@
-[controller]
-master-ansible ansible-connection=local
-
 [workers]
-worker-01
-worker-02
-worker-03
-worker-04
-
-[balancer]
-balancer-host
+balancer
+redis
+mongodb
+jupyter
 
 [all:vars]
 ansible_connection=ssh

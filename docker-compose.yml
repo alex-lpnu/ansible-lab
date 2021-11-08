@@ -1,27 +1,24 @@
 version: "3.3"
 
 services:
-  worker-01:
+  redis:
     build:
       dockerfile: python-sshd.Dockerfile
       context: .
 
-  worker-02:
-    build:
-      dockerfile: python-sshd.Dockerfile
-      context: .
-  
-  worker-03:
+  mongodb:
     build:
       dockerfile: python-sshd.Dockerfile
       context: .
 
-  worker-04:
+  jupyter:
     build:
       dockerfile: python-sshd.Dockerfile
       context: .
+    ports:
+      - 8888:8888
 
-  balancer-host:
+  balancer:
     build:
       dockerfile: python-sshd.Dockerfile
       context: .
