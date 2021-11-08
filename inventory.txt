@@ -5,12 +5,14 @@ master-ansible ansible-connection=local
 worker-01
 worker-02
 worker-03
+worker-04
 
 [balancer]
-worker-04
+balancer-host
 
 [all:vars]
 ansible_connection=ssh
 ansible_user=pythonssh
 ansible_password=sshpass
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+ansible_become_password=sshpass

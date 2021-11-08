@@ -2,16 +2,29 @@ version: "3.3"
 
 services:
   worker-01:
-    image: davidlor/python-ssh
+    build:
+      dockerfile: python-sshd.Dockerfile
+      context: .
 
   worker-02:
-    image: davidlor/python-ssh
+    build:
+      dockerfile: python-sshd.Dockerfile
+      context: .
   
   worker-03:
-    image: davidlor/python-ssh
+    build:
+      dockerfile: python-sshd.Dockerfile
+      context: .
 
   worker-04:
-    image: davidlor/python-ssh
+    build:
+      dockerfile: python-sshd.Dockerfile
+      context: .
+
+  balancer-host:
+    build:
+      dockerfile: python-sshd.Dockerfile
+      context: .
 
   master-ansible:
     image: lexauw/ansible-alpine  
