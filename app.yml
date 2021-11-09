@@ -20,6 +20,8 @@
         name: redis-server
         state: started
         enabled: yes
+    
+    - systemd: daemon_reload=yes
 
 
 
